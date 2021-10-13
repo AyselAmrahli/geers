@@ -1,0 +1,37 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixin';
+
+.section-percent {
+    .percent {
+        &-detail {
+            &_number {
+                color: $theme;
+                font-size: 48px;
+                font-weight: 600;
+                display: block;
+
+                @include for-mobile() {
+                    font-size: 32px;
+                    margin-right: 10px;
+                }
+
+            }
+            &_desc {
+                font-size: 18px;
+                color: $black;
+                font-weight: 600;
+            }
+
+            &_singleText {
+                font-size: 16px;
+                color: $black;
+                font-weight: 300;
+            }
+
+            @include for-mobile() {
+                display: flex;
+                align-items: flex-start;
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+@import '../../assets/scss/variables';
+
+.section-garantie {
+    padding: 80px 0;
+    .garantie {
+        &-list {
+            padding: 0;
+            margin-bottom: 0;
+            list-style-type: none;
+
+            li {
+                font-size: 14px;
+                line-height: 26px;
+                color: $black;
+                margin-bottom: 30px;
+                font-weight: 600;
+                position: relative;
+                margin-left: 45px;
+                &::before {
+                    position: absolute;
+                    top: 50%;
+                    left: -45px;
+                    transform: translateY(-50%);
+                    content: "";
+                    width: 35px;
+                    height: 35px;
+                    background-image: url(../../assets/img/gray-tick.png);
+                    background-size: contain;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &-certificates {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 20px 0 40px;
+        }
+    }
+}

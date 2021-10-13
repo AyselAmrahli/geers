@@ -1,0 +1,13 @@
+@import '../../assets/scss/variables';
+
+#footer {
+    .footer-bottom {
+        padding: 20px 0;
+        background-color: $gray3;
+        text-align: center;
+        p {
+            margin: 0;
+            color: $white;
+        }
+    }
+}

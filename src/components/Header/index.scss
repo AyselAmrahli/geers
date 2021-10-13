@@ -1,0 +1,22 @@
+@import '../../assets/scss/variables';
+
+#header {
+    padding: 30px 0;
+
+    .geers-logo {
+        text-align: left;
+    }
+
+    .geers-contact {
+        color: $theme;
+        text-align: right;
+
+        &_phone {
+            font-size: 22px;
+            display: block;
+        }
+        &_availability {
+            font-size: 14px;
+        }
+    }
+}

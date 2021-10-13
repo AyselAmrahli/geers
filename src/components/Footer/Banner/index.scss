@@ -1,0 +1,32 @@
+@import '../../../assets/scss/variables';
+
+.section-banner {
+    background-image: url(../../../assets/img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 400px;
+    
+    .banner {
+        &-info {
+            padding: 45px 0;
+            &_icon {
+                width: 87px;
+            }
+            &_main{
+                color: $white;
+                h5 {
+                    font-weight: 600;
+                    font-size: 30px;
+                    line-height: 42px;
+                }
+
+                span {
+                    font-size: 22px;
+                    font-weight: normal;
+                    line-height: 42px;
+                }
+            }
+        }
+    }
+}

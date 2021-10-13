@@ -1,0 +1,75 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixin';
+
+#hero {
+    position: relative;
+
+    .background {
+        padding: 40px 0;
+        height: calc(501px - 40px);
+        background-image: url(../../assets/img/hero-back.png);
+        background-repeat: no-repeat;  
+        background-size: cover;
+
+        @include for-mobile() {
+            height: 200px;
+            padding: 0;
+            background-size: 100% 100%;
+        }
+    }
+
+    .pink-circle_item {
+        position: absolute;
+        top: 10%;
+        right: 15%; 
+
+        @include for-mobile() {
+            height: 100px;
+            width: 100px;
+            right: 5%;
+            top: 3%;
+        }
+    }
+
+    .hero {
+        &-box {
+            @include for-desktop() {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 60px;
+                width: inherit;
+                background-color: $white;
+                border: 1px solid $gray2;
+                height: calc(461px - 80px);
+                padding: 40px;
+            }
+            background-color: $gray;
+            padding: 25px;
+
+            &_title {
+                text-align: center;
+                font-size: 30px;
+                letter-spacing: 0px;
+                color: $black;
+                text-transform: uppercase;
+                margin-bottom: 25px;
+            }
+        }
+        &-rating_list {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 0;
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+            li {
+                img {
+                    height: 60px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    
+}

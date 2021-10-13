@@ -1,0 +1,31 @@
+// common styles
+
+@import './assets/scss/variables';
+
+.btn-theme {
+  background-color: $theme;
+  padding: 17px 0;
+  text-align: center;
+  font-size: 20px;
+  color: $white;
+
+  &:focus,
+  &:hover {
+    color: $white;
+  }
+}
+
+.relative {
+  position: relative;
+}
+
+.section {
+  &-title {
+    padding: 50px 0;
+    h4 {
+      font-size: 28px;
+      color: $black;
+      line-height: 45px;
+    }
+  }
+}
